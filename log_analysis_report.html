@@ -1,0 +1,31 @@
+
+<html>
+<head>
+    <title>Log Analysis Report</title>
+    <style>
+        body { font-family: 'Verdana', sans-serif; margin: 20px; background-color: #eafaf1; color: #2e5d36; }
+        h1, h2 { text-align: center; color: #1d4b2c; }
+        table { width: 85%; margin: 20px auto; border-collapse: collapse; background-color: #ffffff; }
+        th, td { border: 1px solid #d1e7d3; padding: 12px; text-align: center; }
+        th { background-color: #3a7947; color: #ffffff; }
+        tr:nth-child(even) { background-color: #f4fdf6; }
+        tr:nth-child(odd) { background-color: #eafaf1; }
+        p { text-align: center; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>log Analysis Overview</h1>
+    <h2>Request Distribution by IP</h2>
+    <table>
+        <tr><th>IP Address</th><th>Total Requests</th></tr>
+<tr><td>203.0.113.5</td><td>9</td></tr><tr><td>198.51.100.23</td><td>8</td></tr><tr><td>192.168.1.1</td><td>7</td></tr><tr><td>10.0.0.2</td><td>6</td></tr><tr><td>192.168.1.100</td><td>5</td></tr><tr><td>192.168.1.101</td><td>2</td></tr><tr><td>203.0.113.7</td><td>1</td></tr><tr><td>10.0.0.3</td><td>1</td></tr><tr><td>203.0.113.8</td><td>1</td></tr><tr><td>10.0.0.5</td><td>1</td></tr><tr><td>192.168.2.10</td><td>1</td></tr><tr><td>198.51.100.25</td><td>1</td></tr>
+    </table>
+    <h2>Top Endpoint Access</h2>
+<p><strong>/login</strong> was accessed <strong>16</strong> times.</p>
+    <h2>Suspicious IPs</h2>
+    <table>
+        <tr><th>IP Address</th><th>Failed login Attempts</th></tr>
+<tr><td>203.0.113.5</td><td>8</td></tr>
+    </table>
+</body>
+</html>
